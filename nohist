@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+cp -P ~/.bash_history ~/.bash_history.backup
+bash --rcfile nohist.env
+cp -P ~/.bash_history.backup ~/.bash_history
+history -r
